@@ -57,6 +57,7 @@
 #section_ticketing td {
     padding: 10px 20px;
     background-color: #f2f0e5;
+    position: relative;
 }
 
 #sort_list {
@@ -87,4 +88,27 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+#city_list {
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    text-align: right;
+    float: left;
+}
+
+#city_list li {
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 5px;
+    background-color: #e6e4d9;
+    font-size: 14px;
+}
+
+#theater_list {
+    float: right;
 }
