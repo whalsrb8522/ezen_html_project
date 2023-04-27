@@ -1,0 +1,31 @@
+#header {
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid #eee
+}
+
+#header_content {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+#header_content ul {
+    display: flex;
+    align-items: center;
+}
+
+#header_content li {
+    margin-left: 40px;
+}
+
+#header_content img {
+    width: 30px;
+    height: 30px;
+}
+
+#header_content a {
+    text-align: center;
+}
