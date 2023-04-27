@@ -95,11 +95,9 @@
     top: 10px;
     width: 100px;
     text-align: right;
-    float: left;
 }
 
 #city_list li {
-
     display: flex;
     justify-content: right;
     align-items: center;
@@ -109,6 +107,4 @@
     font-size: 14px;
 }
 
-#theater_list {
-    float: right;
-}
+#theater_list {}

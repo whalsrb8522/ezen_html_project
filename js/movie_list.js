@@ -57,7 +57,8 @@ function printMovies(sort) {
                     return -1;
                 if (x > y)
                     return 1;
-                return 0;
+                else
+                    return 0;
             });
             break;
         case 'name_desc':
@@ -70,21 +71,44 @@ function printMovies(sort) {
                     return 1;
                 if (x > y)
                     return -1;
-                return 0;
+                else
+                    return 0;
             });
             break;
         case 'age_asc':
             sort_list.getElementsByTagName('a')[0].innerHTML = '가나다순&nbsp;&nbsp;&nbsp;';
             sort_list.getElementsByTagName('a')[1].innerHTML = '시청등급순▲';
             movies.sort(function (a, b) {
-                return a['age'] - b['age'];
+                if (a['age'] == b['age']) {
+                    let x = a['name'];
+                    let y = b['name'];
+                    if (x < y)
+                        return -1;
+                    if (x > y)
+                        return 1;
+                    else
+                        return 0;
+                }
+                else
+                    return a['age'] - b['age'];
             });
             break;
         case 'age_desc':
             sort_list.getElementsByTagName('a')[0].innerHTML = '가나다순&nbsp;&nbsp;&nbsp;';
             sort_list.getElementsByTagName('a')[1].innerHTML = '시청등급순▼';
             movies.sort(function (a, b) {
-                return b['age'] - a['age'];
+                if (a['age'] == b['age']) {
+                    let x = a['name'];
+                    let y = b['name'];
+                    if (x < y)
+                        return 1;
+                    if (x > y)
+                        return -1;
+                    else
+                        return 0;
+                }
+                else
+                    return b['age'] - a['age'];
             });
             break;
     }
