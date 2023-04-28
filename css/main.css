@@ -31,3 +31,7 @@ body {
     overflow-y: scroll;
     position: relative;
 }
+
+.hover_color_red:hover {
+    color: red;
+}
