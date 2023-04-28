@@ -74,36 +74,88 @@
                     예매 다시하기
                 </a>
             </div>
-            <table id="section_ticketing">
-                <tr>
-                    <th id="section_movie">영화</th>
-                    <th id="section_theater">극장</th>
-                    <th id="section_date">날짜</th>
-                </tr>
-                <tr>
-                    <td>
+
+            <div id="section_ticketing" style="display: table;">
+                <div style="display: table-row;">
+                    <div id="section_movie" class="section_th bg_gray">영화</div>
+                    <div id="section_theater" class="section_th bg_gray">극장</div>
+                    <div id="section_date" class="section_th bg_gray">날짜</div>
+                </div>
+                <div style="display: table-row;">
+                    <div class="section_td">
                         <div id="sort_list">
                             <a href="#">가나다순</a>
                             <a href="#">시청등급순</a>
                         </div>
-                        <ul id="movie_list">
-                        </ul>
-                    </td>
-                    <td id="theater_container">
-                        <ul id="city_list">
-                        </ul>
-                        <ul id="theater_list">
-                            <li>부평</li>
-                        </ul>
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-            </table>
+                        <div id="movie_list"></div>
+                    </div>
+
+                    <div class="section_td">
+                        <span id="movie_plz" class="no_select">영화를 선택해주세요.</span>
+                        <div id="city_list" class="dp_none"></div>
+                        <div id="theater_list" class="dp_none"></div>
+                    </div>
+
+                    <div id="date_select" class="section_td">
+                        <span id="theater_plz" class="no_select">영화,극장을 선택해주세요.</span>
+
+                        <div id="calendar" class="my-calendar clearfix dp_none">
+                            <div class="calendar-box">
+                                <div class="ctr-box clearfix">
+                                    <button type="button" title="prev" class="btn-cal prev"></button>
+                                    <span class="cal-month"></span>
+                                    <span class="cal-year"></span>
+                                    <button type="button" title="next" class="btn-cal next"></button>
+                                </div>
+                                <table class="cal-table">
+                                    <thead>
+                                        <tr>
+                                            <th>일</th>
+                                            <th>월</th>
+                                            <th>화</th>
+                                            <th>수</th>
+                                            <th>목</th>
+                                            <th>금</th>
+                                            <th>토</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="cal-body"></tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <button id="reservation" class="dp_none" type="button">
+                            좌석선택
+                        </button>
+                    </div>
+                </div>
+                <div style="display: table-row;">
+                    <div class="section_tf dp_none">
+                        <div class="clicked-date">
+                            <div class="cal-day"></div>
+                            <div class="cal-date"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="reservationTab" class="dp_none">
+            <div id="reservationExit">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+
+                <div id="reservation_content"></div>
+            </div>
         </div>
 
         <script src="./js/movie_list.js"></script>
         <script src="./js/theater_list.js"></script>
+        <script src="./js/date_select.js"></script>
+        <script src="./js/reservation.js"></script>
+
+
     </div>
 
     <div id="footer">
@@ -146,6 +198,8 @@
             </ul>
         </div>
     </div>
+
+
 </body>
 
 </html>

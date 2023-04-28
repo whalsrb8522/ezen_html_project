@@ -1,6 +1,3 @@
-let movie_list = document.getElementById('movie_list');
-let sort_list = document.getElementById('sort_list');
-
 let movies = [
     { name: "가디언즈오브갤럭시-Volume3", age: "12" },
     { name: "슈퍼마리오브라더스", age: "0" },
@@ -14,13 +11,19 @@ let movies = [
     { name: "무명", age: "15" },
     { name: "리바운드", age: "12" },
     { name: "LESSERAFIMCOMEBACKSHOW-UNFORGIVENinCGV", age: "12" },
-    { name: "항구의니쿠코짱!", age: "0" }
+    { name: "항구의니쿠코짱!", age: "0" },
+    // { name: "", age: "" }
 ];
+
+let movie_list = document.getElementById('movie_list');
+let sort_list = document.getElementById('sort_list');
+let movie_plz = document.getElementById('movie_plz');
 
 let sort = 'name_asc';
 
 sort_list.getElementsByTagName('a')[0].addEventListener("click", () => {
     movie_list.innerHTML = '';
+    // choseMovie = false;
 
     if (sort == 'name_asc') {
         sort = 'name_desc';
@@ -34,6 +37,7 @@ sort_list.getElementsByTagName('a')[0].addEventListener("click", () => {
 
 sort_list.getElementsByTagName('a')[1].addEventListener("click", () => {
     movie_list.innerHTML = '';
+    // choseMovie = false;
 
     if (sort == 'age_asc') {
         sort = 'age_desc';
@@ -113,6 +117,7 @@ function printMovies(sort) {
             break;
     }
 
+    let ul = document.createElement('ul');
     for (const iter of movies) {
         let li = document.createElement('li');
         let img = document.createElement('img');
@@ -134,8 +139,26 @@ function printMovies(sort) {
 
         li.appendChild(img);
         li.innerHTML += iter['name'];
-
-        movie_list.appendChild(li);
+        ul.appendChild(li);
     }
+    movie_list.appendChild(ul);
 }
 printMovies(sort);
+
+let choseMovie;
+movie_list.addEventListener("click", function (p) {
+    if (p.target.tagName == 'LI') {
+        if (choseMovie == undefined) {
+            choseMovie = p.target;
+            choseMovie.classList.add('bg_gray')
+        } else {
+            choseMovie.classList.remove('bg_gray');
+            choseMovie = p.target;
+            choseMovie.classList.add('bg_gray')
+        }
+    }
+
+    movie_plz.classList.add('dp_none');
+    city_list.classList.remove('dp_none');
+    theater_list.classList.remove('dp_none');
+});

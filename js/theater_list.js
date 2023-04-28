@@ -101,17 +101,58 @@ let cityTheater = [
         ]
     }
 ]
-console.log(cityTheater);
 
 let city_list = document.getElementById('city_list');
 let theater_list = document.getElementById('theater_list');
+let theater_plz = document.getElementById('theater_plz');
 
-function print_theater() {
+function print_city() {
+    let ul = document.createElement('ul');
+
     for (const iter of cityTheater) {
-        console.log(iter);
         let li = document.createElement('li');
         li.innerHTML = `${iter['city']}(${iter['theater'].length})`;
-        city_list.appendChild(li);
+        li.id = `${iter['city']}`;
+        li.addEventListener("click", print_theater);
+        ul.appendChild(li)
+    }
+    city_list.appendChild(ul);
+}
+print_city();
+
+function print_theater(e) {
+    theater_list.innerHTML = '';
+
+    for (const city of cityTheater) {
+        if (city['city'] == e.target.id) {
+            let ul = document.createElement('ul');
+
+            for (const theater of city['theater']) {
+                let li = document.createElement('li');
+                li.innerHTML = `${theater}`;
+                li.id = `${theater}`
+                ul.appendChild(li)
+            }
+
+            theater_list.appendChild(ul);
+            return;
+        }
     }
 }
-print_theater();
+
+let choseTheater;
+theater_list.addEventListener("click", function (p) {
+    if (p.target.tagName == 'LI') {
+        if (choseTheater == undefined) {
+            choseTheater = p.target;
+            choseTheater.classList.add('bg_gray')
+        } else {
+            choseTheater.classList.remove('bg_gray');
+            choseTheater = p.target;
+            choseTheater.classList.add('bg_gray')
+        }
+    }
+
+    theater_plz.classList.add('dp_none');
+    calendar.classList.remove('dp_none');
+});

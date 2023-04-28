@@ -9,6 +9,7 @@
 #section_content {
     width: 980px;
     margin: 0 auto;
+    position: relative;
 }
 
 #section_nav {
@@ -34,30 +35,47 @@
 
 #section_ticketing {
     width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
 }
 
-#section_ticketing th {
-    background-color: #333333;
-    color: white;
-    height: 35px;
+.section_th {
+    display: table-cell;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+    border: 2px solid #d4d3c9;
 }
 
-#section_movie {
+.section_td {
+    display: table-cell;
+    background-color: #f2f0e5;
+    padding: 10px 20px;
+    border: 2px solid #d4d3c9;
+    height: 345px;
+}
+
+.section_tf {
+    display: table-cell;
+
+}
+
+.section_th:nth-of-type(1),
+.section_td:nth-of-type(1) {
+    position: relative;
     width: 380px;
 }
 
-#section_theater {
-    width: 300px;
-}
-
-#section_date {
-    width: 300px;
-}
-
-#section_ticketing td {
-    padding: 10px 20px;
-    background-color: #f2f0e5;
+.section_th:nth-of-type(2),
+.section_td:nth-of-type(2) {
     position: relative;
+    width: 280px;
+}
+
+.section_th:nth-of-type(3),
+.section_td:nth-of-type(3) {
+    position: relative;
+    width: 320px;
 }
 
 #sort_list {
@@ -75,19 +93,27 @@
     color: #fb4357;
 }
 
+#movie_list {
+    overflow-y: scroll;
+    height: 345\px;
+}
+
+
+#movie_list li {
+    padding: 5px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 320px;
+}
+
 #movie_list img {
     width: 20px;
     height: 20px;
     margin-right: 5px;
     vertical-align: bottom;
-}
-
-#movie_list li {
-    width: 300px;
-    margin-top: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 #city_list {
@@ -98,13 +124,158 @@
 }
 
 #city_list li {
-    display: flex;
-    justify-content: right;
-    align-items: center;
     height: 30px;
-    margin-bottom: 5px;
+    line-height: 30px;
+    margin-bottom: 3px;
     background-color: #e6e4d9;
     font-size: 14px;
+    cursor: pointer;
+    padding: 0 5px;
 }
 
-#theater_list {}
+#theater_list {
+    position: absolute;
+    top: 10px;
+    left: 120px;
+    width: 150px;
+    height: 360px;
+    overflow-y: scroll;
+}
+
+#theater_list li {
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reservation {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#reservationTab {
+    width: 1100px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    background-color: #333;
+    z-index: 999
+}
+
+#reservationExit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.bg_gray {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.no_select {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 13px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.dp_none {
+    display: none;
+}
+
+
+
+/* 달력 */
+.my-calendar {
+    text-align: center;
+    cursor: default;
+}
+
+.cal-table {
+    width: 100%;
+}
+
+.cal-table td {
+    padding: 3px 0;
+    /* height: 50px; */
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.cal-table td.day {
+    position: relative;
+    cursor: pointer;
+}
+
+.cal-table td.today {
+    background: #ffd255;
+    /* border-radius: 50%; */
+    color: #fff;
+}
+
+.cal-table td.day-active {
+    background: #ff8585;
+    /* border-radius: 50%; */
+    color: #fff;
+}
+
+.cal-table td.has-event:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #FFC107;
+}
+
+.ctr-box .btn-cal {
+    position: relative;
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.ctr-box .btn-cal:after {
+    content: '<';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ctr-box .btn-cal.next {
+    float: right;
+}
+
+.ctr-box .btn-cal.next:after {
+    content: '>';
+}
