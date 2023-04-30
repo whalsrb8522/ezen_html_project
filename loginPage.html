@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginPage</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div id="header_content">
+            <h1><a href="./index.html">영화예매</a></h1>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./img/loginPassword.png" alt=""> <br>
+                        <span>로그인</span>
+                    </a>
+                <li>
+                    <a href="#">
+                        <img src="./img/loginJoin.png" alt=""> <br>
+                        <span>회원가입</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/loginMember.png" alt=""> <br>
+                        <span>MY CGV</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/loginCustomer.png" alt=""> <br>
+                        <span>고객센터</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="nav">
+        <div id="nav_content">
+            <ul>
+                <li>영화</li>
+                <li>극장</li>
+                <li>예매</li>
+                <li>스토어</li>
+                <li>이벤트</li>
+                <li>혜택</li>
+            </ul>
+            <div id="nav_search">
+                <input type="text" name="" id="">
+                <button type="button"></button>
+            </div>
+        </div>
+    </div>
+    <div id="login_content">
+        <button id="btn1" type="button">로그인</button><button id="btn2" type="button">비회원 예매</button><button id="btn3" type="button">비회원 예매확인</button>
+        <div id="login_container">
+            <div id="login_box">
+                <div id="userIdBox">
+                    <span class="material-symbols-outlined person">
+                        person
+                    </span>
+                    <p id="personText">|</p><input type="text" id="userId" name="userId" value=""><br>
+                </div>
+                <div id="userPwBox">
+                    <span class="material-symbols-outlined lock" id="lock">
+                        lock
+                    </span>
+                    <p id="lockText">|</p><input type="password" id="userPw" name="userPw" value="">
+                </div>
+            </div>
+            <button type="submit" id="loginBtn">로그인</button><br>
+            <p id="idcheckboxText"><input type="checkbox" id="idcheckbox"> 아이디 저장</p>
+            <span class="findId"><a href="#">아이디 찾기</a></span><span class="findPw"><a href="#">비밀번호 찾기</a></span>
+            <span id="naverIcon">N</span><button type="submit" id="naverBtn">네이버 로그인</button>
+        </div>
+        
+        <div id="sighUp">
+            <span id="sighUpText">회원이 아니신가요? 회원가입하시고 다양한 혜택을 누리세요!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <button type="button" id="sighUpBtn">회원가입하기</button>
+        </div>
+    </div>
+   
+
+    <script>
+
+        window.addEventListener('load', ()=>{
+            document.getElementById('btn1').style.backgroundColor = 'rgb(255, 134, 140)';
+        })
+         document.getElementById('btn1').addEventListener('click', ()=>{
+            document.getElementById('btn1').style.backgroundColor = 'rgb(255, 134, 140)';
+            document.getElementById('btn2').style.backgroundColor = 'rgb(197, 197, 197)';
+            document.getElementById('btn3').style.backgroundColor = 'rgb(197, 197, 197)';
+         })
+         document.getElementById('btn2').addEventListener('click', ()=>{
+            document.getElementById('btn1').style.backgroundColor = 'rgb(197, 197, 197)';
+            document.getElementById('btn2').style.backgroundColor = 'rgb(255, 134, 140)';
+            document.getElementById('btn3').style.backgroundColor = 'rgb(197, 197, 197)';
+         })
+         document.getElementById('btn3').addEventListener('click', ()=>{
+            document.getElementById('btn1').style.backgroundColor = 'rgb(197, 197, 197)';
+            document.getElementById('btn2').style.backgroundColor = 'rgb(197, 197, 197)';
+            document.getElementById('btn3').style.backgroundColor = 'rgb(255, 134, 140)';
+         })
+        // document.addEventListener('click', function (e) {
+        //     var container = document.getElementById('userId');
+        //     if (!container.contains(e.target)) {
+        //         container.style.display = 'none';
+        //     }
+        // });
+
+        
+        // document.getElementById('userId').addEventListener('click', (event) => {
+        //         console.log(event.target);
+
+        //         // if(event.target.id == )
+
+        //         document.getElementById('userIdBox').style.border = "1px solid black";
+             
+        // })
+        // document.getElementById('userPw').addEventListener('click', () => {
+        //     document.getElementById('userPwBox').style.border = "1px solid black";
+        // })
+
+
+    </script>
+</body>

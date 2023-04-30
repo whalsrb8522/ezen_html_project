@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입여부</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/joinCheck.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <!-- header, nav -->
+    <div id="header">
+        <div id="header_content">
+            <h1><a href="./index.html">영화예매</a></h1>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./img/loginPassword.png" alt=""> <br>
+                        <span>로그인</span>
+                    </a>
+                <li>
+                    <a href="#">
+                        <img src="./img/loginJoin.png" alt=""> <br>
+                        <span>회원가입</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/loginMember.png" alt=""> <br>
+                        <span>MY CGV</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/loginCustomer.png" alt=""> <br>
+                        <span>고객센터</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="nav">
+        <div id="nav_content">
+            <ul>
+                <li>영화</li>
+                <li>극장</li>
+                <li>예매</li>
+                <li>스토어</li>
+                <li>이벤트</li>
+                <li>혜택</li>
+            </ul>
+            <div id="nav_search">
+                <input type="text" name="" id="">
+                <button type="button"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 내용 시작 -->
+    <div id="contents">
+        <div id="cont_header">
+            <h1 id="title">
+                CGV+CJ ONE 통합회원 가입
+            </h1>
+            <p id="p-text">통합 아이디로 CJ ONE 브랜드 혜택도 받고! 포인트도 쌓고!</p>
+        </div>
+        <div id="check_member">
+            <div id="box_member">
+                <div id="check_member_box">
+                    <dl id="check_member_txt">
+                        <dt>회원가입 여부 안내</dt>
+                        <dd>
+                            <ul>
+                                <li class="dot_arr">
+                                    기존 회원가입 정보와 일치하는 정보를 입력하셔야
+                                    회원가입 여부를 정확하게 확인하실 수 있습니다.
+                                    <em class="em">
+                                        입력하신 정보는 회원가입 여부에만 사용되며 저장되지 않습니다.
+                                    </em>
+                                </li>
+                                <li class="dot_arr">
+                                    올리브영, CJ온스타일, CJ더마켓, COOKIT, CJ문화재단, CATCHON, ONEiVERSE 에서는
+                                    전자상거래에 의거하여 만 14세 미만의 어린이/학생의 회원가입을 제한합니다.
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <div id="check_member_form">
+                        <input type="text" id="user_id" placeholder="이름을 입력해주세요.">
+                        <input type="text" id="user_birth" placeholder="법정생년월일 6자리를 입력해주세요.">
+                        <input type="text" id="user_num" placeholder="휴대전화번호 뒤 7~8자리를 입력해주세요. (01X제외)">
+                        <div id="btn_check_box">
+                            <a href="#" id="btn_check">가입여부 확인</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 제휴 브랜드 -->
+                <div id="brand_box">
+                    <div id="inner_sec">
+                        <ul id="brand_list">
+                            <li>
+                                <a
+                                    href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7010&brnd_cd=1000&mcht_no=1000">
+                                    <img src="./img/01.png" alt="CGV">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7190&brnd_cd=1900&mcht_no=1900">
+                                    <img src="./img/02.png" alt="TIVING">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7150&brnd_cd=1501&mcht_no=1501">
+                                    <img src="./img/03.png" alt="CJ문화재단">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7040&brnd_cd=4160&mcht_no=4160">
+                                    <img src="./img/04.png" alt="CATCHON">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7030&brnd_cd=3000&mcht_no=3000">
+                                    <img src="./img/05.png" alt="올리브영">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7060&brnd_cd=6010&mcht_no=6010">
+                                    <img src="./img/06.png" alt="CJ더마켓">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7050&brnd_cd=5000&mcht_no=30">
+                                    <img src="./img/07.png" alt="CJ온스타일">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7230&brnd_cd=2301&mcht_no=2301">
+                                    <img src="./img/08.png" alt="CJ더마켓(오프라인)">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7280&brnd_cd=2801&mcht_no=2801">
+                                    <img src="./img/09.png" alt="진맛과">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7060&brnd_cd=6130&mcht_no=6130">
+                                    <img src="./img/10.png" alt="쿡킷">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7060&brnd_cd=6050&mcht_no=6050">
+                                    <img src="./img/11.png" alt="CJ제일제당(이마트)">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7050&brnd_cd=5010&mcht_no=5010">
+                                    <img src="./img/12.png" alt="스타일온에어">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7240&brnd_cd=2401&mcht_no=2401">
+                                    <img src="./img/13.png" alt="ONEiVERSE">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7020&brnd_cd=2200&mcht_no=2200">
+                                    <img src="./img/14.png" alt="더플레이스 다이닝">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7020&brnd_cd=2190&mcht_no=2190">
+                                    <img src="./img/15.png" alt="N서울타워">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7020&brnd_cd=2220&mcht_no=2220">
+                                    <img src="./img/16.png" alt="엔테라스">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7020&brnd_cd=2210&mcht_no=2210">
+                                    <img src="./img/17.png" alt="엔버거">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7020&brnd_cd=2040&mcht_no=2040">
+                                    <img src="./img/18.png" alt="빕스">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7020&brnd_cd=2010&mcht_no=2010">
+                                    <img src="./img/19.png" alt="뚜레쥬르">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7020&brnd_cd=2170&mcht_no=2170">
+                                    <img src="./img/20.png" alt="계절밥상">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7020&brnd_cd=2120&mcht_no=2120">
+                                    <img src="./img/21.png" alt="제일제면소">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7020&brnd_cd=2090&mcht_no=2090">
+                                    <img src="./img/22.png" alt="더플레이스">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7020&brnd_cd=2150&mcht_no=2150">
+                                    <img src="./img/23.png" alt="더스테이크하우스">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7020&brnd_cd=2140&mcht_no=2140">
+                                    <img src="./img/24.png" alt="CJ푸드월드">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7270&brnd_cd=2701&mcht_no=2701">
+                                    <img src="./img/25.png" alt="CU">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.cjone.com/cjmweb/point-card/brand/detail.do?coopco_cd=7130&brnd_cd=1301&mcht_no=1301">
+                                    <img src="./img/26.png" alt="CJ대한통운">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 이용안내 -->
+                <div id="gray_box">
+                    <dl>
+                        <dt>이용안내</dt>
+                        <dd>
+                            <ul class="bul_list">
+                                <li class="dot_arr">
+                                    회원이 되시면
+                                    <em class="em">
+                                        하나의 통합된 회원 ID와 비밀번호로
+                                        CJ ONE 및 각 브랜드 웹 사이트의 다양한 서비스
+                                        (포인트 조회, 카드등록, 정보변경 서비스 등)를 이용하실 수 있습니다.
+                                    </em>
+                                </li>
+                                <li class="dot_arr">
+                                    CJ ONE에 가입하더라도
+                                    <em class="em">
+                                        약관 동의되지 않은 CJ ONE 제휴 브랜드에는 개인정보가 제공되지 않습니다.
+                                    </em>
+                                </li>
+                                <li class="dot_arr">
+                                    CJ ONE은 CJ ONE 제휴 브랜드의 통합 멤버십 서비스입니다.
+                                </li>
+                                <li class="dot_arr">
+                                    하나의 아이디(ID)로 CJ ONE 제휴 브랜드 사이트를 안전하고 편리하게 이용할 수 있습니다.
+                                </li>
+                                <li class="dot_arr">
+                                    기존의 각 CJ ONE 제휴 브랜드 사이트에 1개 이상 가입되어 있는 회원님은 새로운 CJ ONE 통합 아이디(ID)를 생성하신 후 가입하실 수
+                                    있습니다.
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer">
+        <div id="footer_content">
+            <ul id="policy_list">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">지속가능경영</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">광고/제휴/출점문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">편성기준</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">이메일주소무단수집거부</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">사이버감사실</a></li>
+            </ul>
+
+            <ul id="company_info">
+                <li>
+                    (주)이젠아카데미
+                </li>
+                <li>
+                    인천광역시 남동구 인주대로 593 엔타스 12층ㆍ대표자 : 고태곤
+                </li>
+                <li>
+                    사업자등록번호 : 265-92-00112ㆍ학원의 명칭 : 이젠아카데미컴퓨터학원
+                </li>
+                <li>
+                    학원설립/운영 등록번호 : 제 3652호
+                </li>
+                <li>
+                    통신판매업신고번호 : 제 2016-안양만안-0419 호ㆍ개인정보보호책임자 : 고필곤(reaver75@ezenac.co.kr)
+                </li>
+                <li>
+                    <strong>T. 032)719-4074</strong>ㆍ
+                    Copyright by EZEN. All rights reserved.
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

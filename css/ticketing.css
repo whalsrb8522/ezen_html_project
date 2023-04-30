@@ -188,10 +188,21 @@
     font-weight: bold;
 }
 
-.no_select {
+.no_select_movie {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.no_select_theater {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 13px;
     color: #666666;
     font-weight: bold;

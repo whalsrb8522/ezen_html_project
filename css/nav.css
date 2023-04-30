@@ -25,10 +25,10 @@
     font-weight: bold;
 }
 
-#nav_content li:hover {
+/* #nav_content li:hover {
     color: #fb4357;
     cursor: pointer;
-}
+} */
 
 #nav_search {
     display: inline-flex;

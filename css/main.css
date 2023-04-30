@@ -34,4 +34,5 @@ body {
 
 .hover_color_red:hover {
     color: red;
+    cursor: pointer;
 }
