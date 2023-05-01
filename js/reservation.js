@@ -46,6 +46,6 @@ movie_container.addEventListener("click", function (p) {
 });
 
 reservationNext.addEventListener("click", function () {
-    alert(`총 ${count}명, 금액 ${total.toLocaleString()}원1\n예약완료되었습니다.`);
+    alert(`총 ${count}명, 금액 ${total.toLocaleString()}원\n예약완료되었습니다.`);
     location.reload();
 });
