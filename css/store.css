@@ -44,7 +44,7 @@
 }
 
 #evt-menu a{
-    color:#6a6f77;
+    color:rgb(39, 39, 39);
 }
 
 /* 핫딜영역 */
@@ -162,9 +162,9 @@
     height: 75px;
     background-color: rgba(236, 0, 0, 0.76);
     color: white;
-    padding-top: 10px;
+    padding-top: 8px;
     text-align: center;
-    font-size: 1.2dvh;
+    font-size: 1.2vh;
     /* position: absolute; */
     letter-spacing :1px;
     margin-right: 20px;

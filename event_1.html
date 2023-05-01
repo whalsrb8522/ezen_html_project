@@ -85,8 +85,8 @@
             </div>
 
             <!-- content 영역 -->
-            <div id="cols-content">
-                <ul id="sect-evt">
+            <div id="cols-content" class="wrapper">
+                <ul id="sect-evt" class="list">
                     <li>
                         <a href="event_ad.html">
                             <div id="evt-thumb">
@@ -195,7 +195,46 @@
                             </div>
                         </a>
                     </li>
-                    <button type="button" class="btn-item-more" id="btnMoreData" onclick="more()">더보기</button>
+                    <!-- 추가 리스트 -->
+                    <!-- <li>
+                        <a href="">
+                            <div id="evt-thumb">
+                                <img src="img/event/special/event-special-thum7.jpg" alt="">
+                            </div>
+                            <div id="evt-desc">
+                                <p>★캐치!티니핑 굿즈 
+                                    씨네샵 출시!★</p>
+                                <p>2023.01.01~2023.12.31</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div id="evt-thumb">
+                                <img src="img/event/special/event-special-thum8.jpg" alt="">
+                            </div>
+                            <div id="evt-desc">
+                                <p>★프렌즈 신상품 
+                                    씨네샵 출시 및 특가라방★</p>
+                                <p>2023.01.01~2023.12.31</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div id="evt-thumb">
+                                <img src="img/event/special/event-special-thum9.jpg"alt="">
+                            </div>
+                            <div id="evt-desc">
+                                <p>[슈퍼 마리오 브라더스]
+                                    스페셜 콤보 론칭!</p>
+                                <p>2023.01.01~2023.12.31</p>
+                            </div>
+                        </a>
+                    </li> -->
+                    <button type="button" class="btn-item-more" id="btnMoreData">
+                        더보기
+                    </button>
                 </ul>
             </div>
         </div>
@@ -246,14 +285,30 @@
     <!-- script -->
     <script>
         $(document).ready(function(){
-            $("#cols-content#sect-evt>li").hide();
-            $("#cols-content#sect-evt>li").slice(0,6).show(); //0번째부터2번째까지만 보여줌
-        })
 
-        function more(){
-            $("#cols-content#sect-evt>li").slice(6,9).show(); 
-            //more함수는 6번째부터8번째까지 보여줌
-        }
+            var list = $(".list li");
+            var numToShow = 3;
+            var button = $("#btnMoreData");
+            var numInList = list.length;
+            list.hide();
+            if (numInList > numToShow) {
+            button.show();
+            }
+
+           list.slice(0, numToShow).show();
+
+            button.click(function(){
+                var showing = list.filter(':visible').length;
+                list.slice(showing - 1, showing + numToShow).fadeIn();
+                var nowShowing = list.filter(':visible').length;
+                if (nowShowing >= numInList) {
+                 button.hide();
+                }
+            });
+
+        }); 
+
+
     </script>
 </body>
 </html>

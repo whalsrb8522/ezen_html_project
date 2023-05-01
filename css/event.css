@@ -3,7 +3,7 @@
 }
 #contents{
     width: 980px;
-    height: 1200px;
+    /* height: 1200px; */
     /* background-color: azure; */
     margin: 0 auto;
 }
@@ -128,4 +128,3 @@
 #btnMoreData:hover{
     cursor: pointer;
 }
-

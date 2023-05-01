@@ -84,6 +84,7 @@
                 <div style="display: table-row;">
                     <div class="section_td">
                         <div id="sort_list">
+                            <a href="#">예매율순</a>
                             <a href="#">가나다순</a>
                             <a href="#">시청등급순</a>
                         </div>
@@ -145,59 +146,143 @@
                 <span class="material-symbols-outlined">
                     close
                 </span>
+            </div>
 
-                <div id="reservation_content"></div>
+            <div id="reservationNext" class="bg_gray dp_none">
+                <p>총 <span id="reservationCount"></span>명 | 금액 <span id="reservationPrice"></span>원</p>
+                <Strong>결제하기</Strong>
+            </div>
+
+            <div class="container">
+
+
+                <ul class="showcase">
+                    <li>
+                        <div class="seat"></div>
+                        <small>예약가능</small>
+                    </li>
+                    <li>
+                        <div class="seat selected"></div>
+                        <small>선택좌석</small>
+                    </li>
+                    <li>
+                        <div class="seat occupied"></div>
+                        <small>예약불가</small>
+                    </li>
+                </ul>
+
+                <div class="movie_container">
+                    <div class="screen">SCREEN</div>
+
+                    <div class="row">
+                        <div class="seat">A1</div>
+                        <div class="seat">A2</div>
+                        <div class="seat">A3</div>
+                        <div class="seat">A4</div>
+                        <div class="seat">A5</div>
+                        <div class="seat">A6</div>
+                        <div class="seat">A7</div>
+                        <div class="seat">A8</div>
+                    </div>
+                    <div class="row">
+                        <div class="seat">B1</div>
+                        <div class="seat">B2</div>
+                        <div class="seat">B3</div>
+                        <div class="seat occupied">B4</div>
+                        <div class="seat occupied">B5</div>
+                        <div class="seat">B6</div>
+                        <div class="seat">B7</div>
+                        <div class="seat">B8</div>
+                    </div>
+                    <div class="row">
+                        <div class="seat">C1</div>
+                        <div class="seat">C2</div>
+                        <div class="seat">C3</div>
+                        <div class="seat">C4</div>
+                        <div class="seat">C5</div>
+                        <div class="seat">C6</div>
+                        <div class="seat occupied">C7</div>
+                        <div class="seat occupied">C8</div>
+                    </div>
+                    <div class="row">
+                        <div class="seat">D1</div>
+                        <div class="seat">D2</div>
+                        <div class="seat">D3</div>
+                        <div class="seat">D4</div>
+                        <div class="seat">D5</div>
+                        <div class="seat">D6</div>
+                        <div class="seat">D7</div>
+                        <div class="seat">D8</div>
+                    </div>
+                    <div class="row">
+                        <div class="seat">E1</div>
+                        <div class="seat">E2</div>
+                        <div class="seat">E3</div>
+                        <div class="seat occupied">E4</div>
+                        <div class="seat occupied">E5</div>
+                        <div class="seat">E6</div>
+                        <div class="seat">E7</div>
+                        <div class="seat">E8</div>
+                    </div>
+                    <div class="row">
+                        <div class="seat">F1</div>
+                        <div class="seat">F2</div>
+                        <div class="seat">F3</div>
+                        <div class="seat">F4</div>
+                        <div class="seat occupied">F5</div>
+                        <div class="seat occupied">F6</div>
+                        <div class="seat occupied">F7</div>
+                        <div class="seat">F8</div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="./js/movie_list.js"></script>
+            <script src="./js/theater_list.js"></script>
+            <script src="./js/date_select.js"></script>
+            <script src="./js/reservation.js"></script>
+        </div>
+
+        <div id="footer">
+            <div id="footer_content">
+                <ul id="policy_list">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">지속가능경영</a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">광고/제휴/출점문의</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">편성기준</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">이메일주소무단수집거부</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">사이버감사실</a></li>
+                </ul>
+
+                <ul id="company_info">
+                    <li>
+                        (주)이젠아카데미
+                    </li>
+                    <li>
+                        인천광역시 남동구 인주대로 593 엔타스 12층ㆍ대표자 : 고태곤
+                    </li>
+                    <li>
+                        사업자등록번호 : 265-92-00112ㆍ학원의 명칭 : 이젠아카데미컴퓨터학원
+                    </li>
+                    <li>
+                        학원설립/운영 등록번호 : 제 3652호
+                    </li>
+                    <li>
+                        통신판매업신고번호 : 제 2016-안양만안-0419 호ㆍ개인정보보호책임자 : 고필곤(reaver75@ezenac.co.kr)
+                    </li>
+                    <li>
+                        <strong>T. 032)719-4074</strong>ㆍ
+                        Copyright by EZEN. All rights reserved.
+                    </li>
+                </ul>
             </div>
         </div>
-
-        <script src="./js/movie_list.js"></script>
-        <script src="./js/theater_list.js"></script>
-        <script src="./js/date_select.js"></script>
-        <script src="./js/reservation.js"></script>
-
-
-    </div>
-
-    <div id="footer">
-        <div id="footer_content">
-            <ul id="policy_list">
-                <li><a href="#">회사소개</a></li>
-                <li><a href="#">지속가능경영</a></li>
-                <li><a href="#">IR</a></li>
-                <li><a href="#">채용정보</a></li>
-                <li><a href="#">광고/제휴/출점문의</a></li>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">편성기준</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">법적고지</a></li>
-                <li><a href="#">이메일주소무단수집거부</a></li>
-                <li><a href="#">윤리경영</a></li>
-                <li><a href="#">사이버감사실</a></li>
-            </ul>
-
-            <ul id="company_info">
-                <li>
-                    (주)이젠아카데미
-                </li>
-                <li>
-                    인천광역시 남동구 인주대로 593 엔타스 12층ㆍ대표자 : 고태곤
-                </li>
-                <li>
-                    사업자등록번호 : 265-92-00112ㆍ학원의 명칭 : 이젠아카데미컴퓨터학원
-                </li>
-                <li>
-                    학원설립/운영 등록번호 : 제 3652호
-                </li>
-                <li>
-                    통신판매업신고번호 : 제 2016-안양만안-0419 호ㆍ개인정보보호책임자 : 고필곤(reaver75@ezenac.co.kr)
-                </li>
-                <li>
-                    <strong>T. 032)719-4074</strong>ㆍ
-                    Copyright by EZEN. All rights reserved.
-                </li>
-            </ul>
-        </div>
-    </div>
 
 
 </body>
