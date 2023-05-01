@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="./css/header.css">
-	<link rel="stylesheet" href="./css/nav.css">
-	<link rel="stylesheet" href="./css/benefit.css">
-	<link rel="stylesheet" href="./css/footer.css">
-    
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/benefit.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
 </head>
+
 <body>
     <div id="header">
         <div id="header_content">
-            <h1><a href="./index.html">영화예매</a></h1>
+            <h1><a href="./index.html">영화관</a></h1>
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="./loginPage.html">
                         <img src="./img/loginPassword.png" alt=""> <br>
                         <span>로그인</span>
                     </a>
                 <li>
-                    <a href="#">
+                    <a href="./join.html">
                         <img src="./img/loginJoin.png" alt=""> <br>
                         <span>회원가입</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./loginPage.html">
                         <img src="./img/loginMember.png" alt=""> <br>
-                        <span>MY CGV</span>
+                        <span>내 정보</span>
                     </a>
                 </li>
                 <li>
@@ -47,12 +49,12 @@
     <div id="nav">
         <div id="nav_content">
             <ul>
-                <li>영화</li>
-                <li>극장</li>
-                <li>예매</li>
-                <li>스토어</li>
-                <li>이벤트</li>
-                <li>혜택</li>
+                <li><a class="hover_color_red" href="#"></a> 영화</li>
+                <li><a class="hover_color_red" href="#"></a> 극장</li>
+                <li><a class="hover_color_red" href="./ticketing.html">예매</a></li>
+                <li><a class="hover_color_red" href="./store.html">스토어</a></li>
+                <li><a class="hover_color_red" href="./event_1.html">이벤트</a></li>
+                <li><a class="hover_color_red" href="./benefit.html">혜택</a></li>
             </ul>
             <div id="nav_search">
                 <input type="text" name="" id="">
@@ -105,7 +107,7 @@
                     <li><a href="event_2.html">통신사</a></li>
                     <li><a href="event_3.html">신용카드</a></li>
                     <li><a href="event_4.html">포인트</a></li>
-                    <li><a href="event_5.html">극장별할인</a></li>                    
+                    <li><a href="event_5.html">극장별할인</a></li>
                 </ul>
             </div>
 
@@ -165,7 +167,7 @@
                                 <img src="img/event/discount/evt-thum5.png" alt="">
                             </div>
                             <div id="evt-desc">
-                                <p>카카오 페이머니카드 
+                                <p>카카오 페이머니카드
                                     신규발급웰컴혜택!</p>
                                 <p>2023.01.01~2023.12.31</p>
                             </div>
@@ -177,7 +179,7 @@
                                 <img src="img/event/discount/evt-thum6.jpg" alt="">
                             </div>
                             <div id="evt-desc">
-                                <p>도서문화상품권  
+                                <p>도서문화상품권
                                     온/오프라인 어디서나!</p>
                                 <p>2023.01.01~2023.12.31</p>
                             </div>
@@ -229,6 +231,18 @@
     <!---------------------------------------- footer ---------------------------------------------------->
 
     <div id="footer">
+        <div topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" style="background-color:transparent"
+            scroll="no">
+            <center>
+                <div class="cgv_cp_ad"
+                    style="background-color:#1f0463;background-image: url(https://adimg.cgv.co.kr/images/bg_temp_foot_banner2021.gif); background-repeat:repeat-x;margin:0 auto">
+                    <div style="width:980px;margin:0 auto"><a
+                            href="http://ad.cgv.co.kr/click/CGV/CGV_201401/main@Bottom?ads_id=49059&amp;creative_id=70545&amp;click_id=90998&amp;content_series=&amp;event="
+                            target="_blank"><img src="http://adimg.cgv.co.kr/images/202305/Gmarket/0427_980x240.png"
+                                alt="광고-G마켓글로벌" border="0"></a></div>
+                </div>
+            </center>
+        </div>
         <div id="footer_content">
             <ul id="policy_list">
                 <li><a href="#">회사소개</a></li>
@@ -273,17 +287,18 @@
     <!-- script -->
 
     <script>
-        document.querySelector('.btn2').addEventListener('click', function(){
-          document.querySelector('#slidesTop').style.transform = 'translateY(-310px)';  
+        document.querySelector('.btn2').addEventListener('click', function () {
+            document.querySelector('#slidesTop').style.transform = 'translateY(-310px)';
         })
-        document.querySelector('.btn3').addEventListener('click', function(){
-          document.querySelector('#slidesTop').style.transform = 'translateY(-630px)';  
+        document.querySelector('.btn3').addEventListener('click', function () {
+            document.querySelector('#slidesTop').style.transform = 'translateY(-630px)';
         })
-        document.querySelector('.btn1').addEventListener('click', function(){
-          document.querySelector('#slidesTop').style.transform = 'translateY(0px)';  
+        document.querySelector('.btn1').addEventListener('click', function () {
+            document.querySelector('#slidesTop').style.transform = 'translateY(0px)';
         })
 
     </script>
 
 </body>
+
 </html>
