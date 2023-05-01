@@ -4,16 +4,19 @@ const reservationTab = document.getElementById('reservationTab');
 const reservationExit = document.getElementById('reservationExit');
 const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 const reservationNext = document.getElementById('reservationNext');
+const cover = document.getElementById('cover');
 
 let count = 0;
 let total = 0;
 
 reservation.addEventListener("click", function () {
     reservationTab.classList.remove('dp_none');
+    cover.classList.remove('dp_none');
 });
 
 reservationExit.addEventListener("click", function () {
     reservationTab.classList.add('dp_none');
+    cover.classList.add('dp_none');
 });
 
 movie_container.addEventListener("click", function (p) {
@@ -33,7 +36,7 @@ movie_container.addEventListener("click", function (p) {
     total = count * 13000;
 
     reservationCount.innerText = count;
-    reservationPrice.innerText = total;
+    reservationPrice.innerText = total.toLocaleString();
 
     if (count > 0) {
         reservationNext.classList.remove('dp_none');
@@ -43,6 +46,6 @@ movie_container.addEventListener("click", function (p) {
 });
 
 reservationNext.addEventListener("click", function () {
-    alert(`총 ${count}명, 금액 ${total}\n예약완료되었습니다.`);
+    alert(`총 ${count}명, 금액 ${total.toLocaleString()}원1\n예약완료되었습니다.`);
     location.reload();
 });
