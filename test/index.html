@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product-block {
+            background: #ffffff;
+            border-radius: 4px;
+        }
+
+        .product-img img {
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3.5;
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <div class="swiper">
+        <div class="home-wrapper-categories swiper-wrapper">
+            <article class="product-block swiper-slide">
+                <header class="product-img">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+                        alt="">
+                </header>
+            </article>
+            <article class="product-block swiper-slide">
+                <header class="product-img">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+                        alt="">
+                </header>
+            </article>
+            <article class="product-block swiper-slide drop-shadow">
+                <header class="product-img">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+                        alt="">
+                </header>
+            </article>
+            <article class="product-block swiper-slide drop-shadow">
+                <header class="product-img">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+                        alt="">
+                </header>
+            </article>
+            <article class="product-block swiper-slide drop-shadow">
+                <header class="product-img">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+                        alt="">
+                </header>
+            </article>
+            <article class="product-block swiper-slide drop-shadow">
+                <header class="product-img">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+                        alt="">
+                </header>
+            </article>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            // direction: 'horizontal',
+            // loop: false,
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetewwn: 30,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // // Responsive breakpoints
+            // breakpoints: {
+            //     0: {
+            //         slidesPerView: 3,
+            //         slidesPerGroup: 3, /* The answer to your Q */
+            //         spaceBetween: 15
+            //     }
+            // }
+        });
+    </script>
+</body>
+
+</html>
