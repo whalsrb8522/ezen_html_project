@@ -374,7 +374,7 @@
 }
 
 .seat.selected {
-    background-color: ffd255;
+    background-color: #ffd255;
 }
 
 .seat.occupied {
