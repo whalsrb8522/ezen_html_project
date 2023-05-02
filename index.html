@@ -830,7 +830,7 @@
                     </div>
                 </div>
                 <div id="noticeClient_banner_wrap">
-                    <a href="#">
+                    <a href="./benefit.html">
                         <img src="./img/notice_banner.png" alt="카드">
                     </a>
                 </div>
@@ -897,21 +897,23 @@
         let btn_play = document.getElementById('btn_playStop');
         let btn_soundOnOff = document.getElementById('btn_soundOnOff');
         let video = document.getElementById('video');
+
         // 메인 영상 재생/일시정지 작동
         btn_playStop.addEventListener('click', function () {
             video.paused ? video.play() : video.pause();
             btn_playStop.classList.toggle("active");
-        })
+        });
+
         // 메인 영상 끝나면 다시 재생버튼으로 바뀜
         video.addEventListener('ended', function () {
             btn_playStop.classList.remove("active");
-        })
+        });
 
         // 메인 영상 사운드 재생/정지 작동
         btn_soundOnOff.addEventListener('click', function () {
             video.muted ? video.muted = false : video.muted = true;
             btn_soundOnOff.classList.toggle("active1");
-        })
+        });
 
         // 무비차트 / 상영예정작 클릭 시 bold
         let tabMenu = document.querySelectorAll('.btn_ac');
@@ -922,18 +924,17 @@
                 // 탭 클릭시 내용 바뀜
                 tabInner.forEach((inner) => {
                     inner.setAttribute('style', 'display:none');
-                })
+                });
                 // 탭 클릭 시 탭에 효과
                 tabMenu.forEach((item) => {
                     item.classList.remove('active2');
-                })
+                });
                 // 탭 클릭 시 탭에 효과
                 tabMenu[idx].classList.add('active2');
                 // 탭 클릭시 내용 바뀜
                 // tabInner[idx].classList.add('movieChart_list');
                 tabInner[idx].setAttribute('style', 'display:block');
-
-            })
+            });
         })
 
         // 무비차트 / 상영예정작 이전, 다음 버튼
@@ -961,8 +962,6 @@
                 movieChartBtn[i].setAttribute('style', 'display:none');
             })
         }
-
-
 
         // 특별관 호버시 class, img 바뀜
         let ul = document.querySelector('.specialHall_list');
