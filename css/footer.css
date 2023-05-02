@@ -28,7 +28,7 @@
 
 #footer_ad {
     background-color: #1f0463;
-    background-image: url(https://adimg.cgv.co.kr/images/bg_temp_foot_banner2021.gif);
+    background-image: url(../img/footer_ad_bg.gif);
     background-repeat: repeat-x;
-    margin: 0 auto;
+    margin: 0 auto
 }
