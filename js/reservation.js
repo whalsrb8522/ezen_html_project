@@ -23,8 +23,6 @@ movie_container.addEventListener("click", function (p) {
     const reservationCount = document.getElementById('reservationCount');
     const reservationPrice = document.getElementById('reservationPrice');
 
-
-
     if (p.target.classList.contains('seat') && !p.target.classList.contains('occupied')) {
         p.target.classList.toggle('selected');
     }

@@ -273,8 +273,8 @@
 }
 
 .cal-table td.day-active {
-    background: #ff8585;
-    /* border-radius: 50%; */
+    background: #333;
+    border-radius: 5px;
     color: #fff;
 }
 
