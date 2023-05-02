@@ -268,7 +268,7 @@
 
 .cal-table td.today {
     background: #ffd255;
-    /* border-radius: 50%; */
+    border-radius: 5px;
     color: #fff;
 }
 
@@ -374,7 +374,7 @@
 }
 
 .seat.selected {
-    background-color: rgb(255, 226, 120);
+    background-color: ffd255;
 }
 
 .seat.occupied {
