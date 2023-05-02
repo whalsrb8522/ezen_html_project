@@ -323,11 +323,12 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- 무비차트 다음 버튼 -->
                     <div class="swiper-button-next" role="button" tabindex="0" aria-label="다음 슬라이드"
                         aria-disabled="false">
-
                     </div>
+
                     <!-- 무비차트 이전 버튼 -->
                     <div class="swiper-button-prev swiper-button-disabled" role="button" tabindex="0"
                         aria-label="이전 슬라이드" aria-disabled="true"></div>
@@ -559,8 +560,6 @@
                 </div>
             </div>
         </div>
-
-
 
         <!-- EVENT -->
         <div id="event_wrap">
@@ -925,12 +924,15 @@
                 tabInner.forEach((inner) => {
                     inner.setAttribute('style', 'display:none');
                 });
+
                 // 탭 클릭 시 탭에 효과
                 tabMenu.forEach((item) => {
                     item.classList.remove('active2');
                 });
+
                 // 탭 클릭 시 탭에 효과
                 tabMenu[idx].classList.add('active2');
+
                 // 탭 클릭시 내용 바뀜
                 // tabInner[idx].classList.add('movieChart_list');
                 tabInner[idx].setAttribute('style', 'display:block');
@@ -946,7 +948,6 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-
         });
 
         // 무비차트 / 상영예정작 hover시 버튼 뜨기
@@ -957,10 +958,11 @@
         for (let i = 0; i < img_wrap.length; i++) {
             img_wrap[i].addEventListener('mouseover', function () {
                 movieChartBtn[i].setAttribute('style', 'display:block');
-            })
+            });
+
             img_wrap[i].addEventListener('mouseout', function () {
                 movieChartBtn[i].setAttribute('style', 'display:none');
-            })
+            });
         }
 
         // 특별관 호버시 class, img 바뀜
@@ -973,17 +975,13 @@
         for (let i = 0; i < li.length; i++) {
             li[i].addEventListener('mouseout', function () {
                 li[i].classList.remove('active3');
-            })
+            });
 
             li[i].addEventListener('mouseover', function () {
                 li[i].classList.add('active3')
                 img.setAttribute('src', `./img/${imgList[i]}`);
-            })
+            });
         }
-
-
-
-
     </script>
 </body>
 
