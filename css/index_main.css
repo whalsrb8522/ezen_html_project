@@ -280,7 +280,7 @@
 }
 
 
-.movieChart_list .img_wrap:after {
+.movieChart_list .img_wrap::after {
     content: counter(movie-chart-counter);
     counter-increment: movie-chart-counter;
     position: absolute;
@@ -564,9 +564,11 @@
 #event_list .img_wrap img:hover {
     transform: scale(1.1);
     transition: all 0.2s linear;
-
 }
 
+.movieChart_list .img_wrap:hover:after {
+    opacity: 0;
+}
 
 #event_list a strong {
     display: block;
